@@ -157,7 +157,7 @@ p {
 .tools {
     align-items: center;
     display: grid;
-    gap: 30px;
+    gap: 25px;
     grid-template-columns: repeat(3, 40%);
     justify-content: center;
     margin-top: 5rem;

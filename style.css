@@ -9,7 +9,8 @@
 
 body {
     font-family: 'Bai Jamjuree', sans-serif;
-
+    min-width: 100vw;
+    overflow-x: hidden;
 }
 
 .cont {
@@ -19,11 +20,11 @@ body {
 
 .fig {
     background-image: url(bg-header-desktop.png);
-    background-size: 100% 100%;
     background-position: top;
+    background-size: 100% 100%;
+    height: 100px;
     position: sticky;
     top: 0;
-    height: 100px;
 }
 
 .logoimg {
@@ -56,9 +57,9 @@ h2 {
 }
 
 p {
-    margin-top: 10px;
-    font-size: 16px;
     color: #575555;
+    font-size: 16px;
+    margin-top: 10px;
 }
 
 .button__top {
@@ -156,7 +157,7 @@ p {
 .tools {
     align-items: center;
     display: grid;
-    gap: 40px;
+    gap: 30px;
     grid-template-columns: repeat(3, 40%);
     justify-content: center;
     margin-top: 5rem;
@@ -173,7 +174,7 @@ p {
 .enterprisesicons {
     align-items: center;
     display: flex;
-    gap: 15%;
+    gap: 10%;
     justify-content: center;
     margin-top: 10rem;
 }
@@ -183,31 +184,30 @@ p {
 }
 
 .buttonbottom {
-    display: flex;
     align-items: center;
-    margin: 3rem 0 8rem 0;
+    display: flex;
     gap: 20px;
     justify-content: center;
+    margin: 3rem 0 8rem 0;
 }
 
 footer {
     background-color: #f5f6f8;
     padding: 3rem 0;
-    margin-bottom: 3rem;
 }
 
 .footercontent {
-    display: flex;
     align-items: center;
-    justify-content: center;
+    display: flex;
     gap: 35%;
+    justify-content: center;
 }
  
 .gridfooter {
-    display: grid;
-    grid-template-columns: repeat(4, 150px);
     align-items: center;
+    display: grid;
     gap: 18%;
+    grid-template-columns: repeat(4, 150px);
 }
 
 .footerlogo {
@@ -221,9 +221,9 @@ footer {
 }
 
 .afooter {
-    text-decoration: none;
-    font-size: 16px;
     color: #575555;
+    font-size: 16px;
+    text-decoration: none;
 }
 
 .afooter:hover {
@@ -232,8 +232,8 @@ footer {
 }
 
 .socialicons {
-    display: flex;
     align-items: center;
+    display: flex;
     gap: 20px;
 }
 
@@ -251,17 +251,16 @@ footer {
     align-items: center;
     background-color: #26bba4;
     bottom: 0;
-    color: #fff;
     display: flex;
+    gap: 10px;
     justify-content: center;
     position: fixed;
     width: 100%;
-    gap: 10px;
 }
 
 .attribution>p {
-    font-size: 2rem;
     color: #000080;
+    font-size: 1.5rem;
 }
 
 :any-link {
@@ -283,7 +282,11 @@ footer {
 }
 
 
-@media (max-width: 1390px) {
+@media (max-width: 1190px) {
+    .cont {
+        overflow-x: hidden;
+    }
+
     .fig {
         background-image: url(bg-header-mobile.png);
         background-repeat: no-repeat;
@@ -413,7 +416,7 @@ footer {
     }
 
     .attribution>p{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 }
 
@@ -425,10 +428,10 @@ footer {
 }
 
 ::-webkit-scrollbar-thumb {
-    /* background: linear-gradient(30deg, #38a2bf 0.11%, #26BBA4 94.8%); */
-    /* border-radius: 50px; */
+    background: linear-gradient(30deg, #38a2bf 0.11%, #26BBA4 94.8%);
     background: linear-gradient(to bottom, #38a2bf, #26BBA4);
     border-radius: 100vw;
+    border-radius: 50px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
